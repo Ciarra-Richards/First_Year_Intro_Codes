@@ -1,0 +1,158 @@
+# My Code
+snacks = {
+    'Chips':{
+        'name': 'Chips',
+        'number': 'A1',
+        'price': 100,
+        'quantity': 5
+    },
+    'Candy Bar':{
+        'name': 'Candy Bar',
+        'number': 'A2',
+        'price': 75,
+        'quantity': 5
+    },
+    'Gum':{
+        'name': 'Gum',
+        'number': 'A3',
+        'price': 25,
+        'quantity': 5
+    },
+}
+
+
+# print welcome message
+print("Welcome to Ciarra's Vending Machine!")
+print("Here are the available items:")
+print("-")
+
+# fixing output order
+print(f"Name: {snacks['Chips']['name']}")
+print(f"Number: {snacks['Chips']['number']}")
+print(f"Price: {snacks['Chips']['price']}")
+print(f"Quantity: {snacks['Chips']['quantity']}")
+
+print("-")
+
+print(f"Name: {snacks['Candy Bar']['name']}")
+print(f"Number: {snacks['Candy Bar']['number']}")
+print(f"Price: {snacks['Candy Bar']['price']}")
+print(f"Quantity: {snacks['Candy Bar']['quantity']}")
+
+print("-")
+
+print(f"Name: {snacks['Gum']['name']}")
+print(f"Number: {snacks['Gum']['number']}")
+print(f"Price: {snacks['Gum']['price']}")
+print(f"Quantity: {snacks['Gum']['quantity']}")
+
+
+# user input and implimentation
+print("-")
+choice = input("Choice: ")
+
+if choice == ("Chips"):
+  print("Thank you for your purchase of Chips")
+
+  # Change from money given
+  # Chips Change
+  c = int(input('Amount:'))
+  c = 100 - c
+  if c == 0:
+    print("No Change")
+    print("-")
+  if c > 0:
+    print("Insufficient Funds")
+    print("-")
+  if c < 0:
+    print(f"Change: {c}")
+    print("-")
+
+  print(c//25, 'quarters')
+  c = c%25
+  print(c//10, 'dimes')
+  c = c%10
+  print(c//5, 'nickels')
+  c = c%5
+  print(c//1, 'pennies')
+  c = c%1
+  print("-")
+
+# Candy Bar Change
+if choice == ("Candy Bar"):
+  print("Thank you for your purchase of Candy Bar")
+
+  # Change from money given
+  # Chips Change
+  c = int(input('Amount:'))
+  c = 75 - c
+  if c == 0:
+    print("No Change")
+    print("-")
+  if c > 0:
+    print("Insufficient Funds")
+    print("-")
+  if c < 0:
+    print(f"Change: {c}")
+    print("-")
+
+  print(c//25, 'quarters')
+  c = c%25
+  print(c//10, 'dimes')
+  c = c%10
+  print(c//5, 'nickels')
+  c = c%5
+  print(c//1, 'pennies')
+  c = c%1
+  print("-")
+
+# Gum Change
+if choice == ("Gum"):
+  print("Thank you for your purchase of Gum")
+
+  # Change from money given
+  # Chips Change
+  c = int(input('Amount:'))
+  c = 25 - c
+  if c == 0:
+    print("No Change")
+    print("-")
+  if c > 0:
+    print("Insufficient Funds")
+    print("-")
+  if c < 0:
+    print(f"Change: {c}")
+    print("-")
+
+  print(c//25, 'quarters')
+  c = c%25
+  print(c//10, 'dimes')
+  c = c%10
+  print(c//5, 'nickels')
+  c = c%5
+  print(c//1, 'pennies')
+  c = c%1
+
+# removing quantity
+snacks[choice]['quantity'] -=1
+print(f"Name: {snacks['Chips']['name']}")
+print(f"Number: {snacks['Chips']['number']}")
+print(f"Price: {snacks['Chips']['price']}")
+print(f"Quantity: {snacks['Chips']['quantity']}")
+
+print("-")
+
+print(f"Name: {snacks['Candy Bar']['name']}")
+print(f"Number: {snacks['Candy Bar']['number']}")
+print(f"Price: {snacks['Candy Bar']['price']}")
+print(f"Quantity: {snacks['Candy Bar']['quantity']}")
+
+print("-")
+
+print(f"Name: {snacks['Gum']['name']}")
+print(f"Number: {snacks['Gum']['number']}")
+print(f"Price: {snacks['Gum']['price']}")
+print(f"Quantity: {snacks['Gum']['quantity']}")
+
+print("-")
+# The Office Season 4 Episode 13, 03:07
